@@ -1,0 +1,30 @@
+// compress: true
+
+/* Imports */
+@import "vars";
+@import "reset";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+
+  color: @white;
+  font-size: 1.8rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  background-color: @primary;
+}
+
+/* Blocks */
+@import "./blocks/scrollbar.less";
+@import "./blocks/page.less";
+@import "./blocks/header.less";
+@import "./blocks/main.less";
+@import "./blocks/members.less";
+@import "./blocks/chat.less";
+@import "./blocks/footer.less";

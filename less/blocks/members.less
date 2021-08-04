@@ -1,0 +1,44 @@
+// main: ../style.less
+
+.members {
+  width: @members-wight;
+  height: calc(100vh ~"-" @header-height ~"-" @footer-height);
+  padding: 1.5rem 2rem;
+
+  background-color: @secondary;
+  box-shadow: 0.5rem 0 1.5rem fade(#050505, 10%);
+
+  overflow-y: auto;
+}
+
+.members__man {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.members__avatar {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+
+  background-color: @blue;
+  border-radius: 50%;
+  border: 0.2rem solid fade(@white, 50%);
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.members__name {
+  width: 10rem;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
